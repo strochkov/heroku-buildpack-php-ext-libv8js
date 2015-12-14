@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "PHP Extension v8js"
+exit 0
