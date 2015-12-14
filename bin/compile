@@ -8,10 +8,10 @@ indent() {
 echo "-----> Installing v8js php extension"
 
 export PATH=/app/.heroku/php/bin:$PATH
-composer install | indent
 
 git clone https://github.com/FriendsOfPHP/pickle.git | indent
 cd pickle
+composer install | indent
 chmod +x bin/pickle
 bin/pickle install v8js-0.1.3 | indent
 echo "extension=v8js.so" >> /app/.heroku/php/etc/php/php.ini
