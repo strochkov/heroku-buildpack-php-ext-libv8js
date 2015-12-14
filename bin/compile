@@ -11,8 +11,8 @@ export PATH=/app/.heroku/php/bin:$PATH
 
 git clone https://github.com/FriendsOfPHP/pickle.git | indent
 cd pickle
-composer install | indent
+composer install
 chmod +x bin/pickle
-bin/pickle install v8js-0.1.5 | indent
+bin/pickle install v8js-1.0.0
 echo "extension=v8js.so" >> /app/.heroku/php/etc/php/php.ini
 echo "finished" | indent
