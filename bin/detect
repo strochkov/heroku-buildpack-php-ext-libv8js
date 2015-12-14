@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+# bin/detect <build-dir>
 
 echo "PHP Extension v8js"
 exit 0
